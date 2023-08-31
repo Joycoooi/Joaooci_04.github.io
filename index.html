@@ -1,483 +1,189 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-08-31 15:25:12'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-06.第1周汇报" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/30/06.%E7%AC%AC1%E5%91%A8%E6%B1%87%E6%8A%A5/" class="article-date">
-  <time class="dt-published" datetime="2023-08-30T09:42:12.502Z" itemprop="datePublished">2023-08-30</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
-<h1 id="第1周汇报"><a href="#第1周汇报" class="headerlink" title="第1周汇报"></a>第1周汇报</h1><p><code>阅读文献</code>：Lakes Nyos and Monoun Gas Disasters (Cameroon)—Limnic Eruptions Caused by<br>Excessive Accumulation of Magmatic CO<del>2</del> in Crater Lakes</p>
-<p><code>期刊</code>：GEochemistry Monograph Series, Vol. 1, No. 1, pp. 1–50 (2017)</p>
-<h2 id="1-背景介绍"><a href="#1-背景介绍" class="headerlink" title="1. 背景介绍"></a>1. 背景介绍</h2><h3 id="1-1-起因"><a href="#1-1-起因" class="headerlink" title="1.1 起因"></a>1.1 起因</h3><p>1986年的尼奥斯湖事件和1984年中非莫瑙恩湖发生的伤亡事件，都是由于CO<del>2</del>在湖泊底层过度积聚所致，由于此前没有发生过类似事件，Monoun湖和Nyos湖事件吸引了大量的注意力。</p>
-<h3 id="1-2-尼奥斯湖和莫瑙恩湖的异常地球化学特征"><a href="#1-2-尼奥斯湖和莫瑙恩湖的异常地球化学特征" class="headerlink" title="1.2 尼奥斯湖和莫瑙恩湖的异常地球化学特征"></a>1.2 尼奥斯湖和莫瑙恩湖的异常地球化学特征</h3><p>测试结果显示50米以下的水域氧气含量较少，主要由高Fe^2+^（200毫克&#x2F;升）和HCO^3-^（1000毫克&#x2F;升）组成，并被菱铁矿过饱和，菱铁矿是火山口底部沉积物的主要成分，异常高的Fe^2+^水平归因于Fe^3+^的还原增多。</p>
-<blockquote>
-<p><strong>Sigurdsson（1978）得出结论，即湖泊中CO<del>2</del>（aq）的积累归因于火山口内喷口岩浆CO<del>2~~（aq）</del>的长期排放，这导致了湖泊中CO<del>2~~（aq）</del>和HCO<del>3</del>^-^的逐渐积累。</strong></p>
-</blockquote>
-<p>为了解决湖底CO<del>2</del>过多积聚带来的问题，需要人工实现脱气。<code>图1</code>显示了尼奥斯湖和莫瑙恩脱气初始阶段的喷泉，尼奥斯湖45米高的喷泉（2001年2月）和莫瑙恩8米高的喷泉（2004年1月）。<strong>CO<del>2</del>在脱气上升过程中，地下深水温度较低，会在喷泉周围下沉，可能会对喷泉的稳定性造成影响。</strong>在经过不同的数值模拟CO<del>2</del>演变规律后，发现<strong>受控脱气导致的水柱不稳定不会对“人造”湖沼喷发造成直接威胁</strong>。Schmid 等人（2004年）<strong>提出如果水柱上升到50-70m之间，可能存在热不稳定性，会引发“湖沼喷发”</strong>。因为他们发现在该深度范围内存在双重扩散对流。与数值模拟结果一致，<strong>在控制脱气操作开始后观察到的湖泊化学结构表明，建立了稳定的分层</strong>，这与两个湖泊的预降解情况基本相同（Kling等人，2005；Kusakabe等人，2008）。如上所述，尼奥斯湖和莫瑙恩湖的化学和物理结构随着时间的推移而稳步发展，直到21世纪初开始脱气。气体脱除开始后，湖泊结构明显受到脱气的影响。</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220729083842181.png" alt="image-20220729083842181" style="zoom:80%;" />
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/30/06.%E7%AC%AC1%E5%91%A8%E6%B1%87%E6%8A%A5/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-08-30T09:42:12.502Z" title="Created 2023-08-30 17:42:12">2023-08-30</time></span></div><div class="content">[TOC]
+第1周汇报阅读文献：Lakes Nyos and Monoun Gas Disasters (Cameroon)—Limnic Eruptions Caused byExcessive Accumulation of Magmatic CO2 in Crater Lakes
+期刊：GEochemistry Monograph Series, Vol. 1, No. 1, pp. 1–50 (2017)
+1. 背景介绍1.1 起因1986年的尼奥斯湖事件和1984年中非莫瑙恩湖发生的伤亡事件，都是由于CO2在湖泊底层过度积聚所致，由于此前没有发生过类似事件，Monoun湖和Nyos湖事件吸引了大量的注意力。
+1.2 尼奥斯湖和莫瑙恩湖的异常地球化学特征测试结果显示50米以下的水域氧气含量较少，主要由高Fe^2+^（200毫克&#x2F;升）和HCO^3-^（1000毫克&#x2F;升）组成，并被菱铁矿过饱和，菱铁矿是火山口底部沉积物的主要成分，异常高的Fe^2+^水平归因于Fe^3+^的还原增多。
 
-<p>​                                                      图1. 尼奥斯湖和莫瑙恩的脱气现场喷泉</p>
-<blockquote>
-<p><strong>测试显示，Nyos湖中溶解以CO<del>2</del>为主，浓度随深度增加而增大，在底部210m达到最大值。</strong></p>
-</blockquote>
-<h2 id="2-尼奥斯湖和莫瑙恩湖的脱气前后"><a href="#2-尼奥斯湖和莫瑙恩湖的脱气前后" class="headerlink" title="2. 尼奥斯湖和莫瑙恩湖的脱气前后"></a>2. 尼奥斯湖和莫瑙恩湖的脱气前后</h2><h3 id="2-1-脱气前的演变"><a href="#2-1-脱气前的演变" class="headerlink" title="2.1 脱气前的演变"></a>2.1 脱气前的演变</h3><h4 id="2-1-1-电导率"><a href="#2-1-1-电导率" class="headerlink" title="2.1.1 电导率"></a>2.1.1 电导率</h4><p><code>图2</code>显示了2003年1月和2001年1月Monoun湖的电导率曲线，两个湖具有相似的化学结构层，分为四个不同的层位。</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220729083906173.png" alt="image-20220729083906173" style="zoom:80%;" />
+Sigurdsson（1978）得出结论，即湖泊中CO2（aq）的积累归因于 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/" title="恋爱哪些事">恋爱哪些事</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-08-30T09:17:40.000Z" title="Created 2023-08-30 17:17:40">2023-08-30</time></span></div><div class="content">记录
+喊我刮胡子 😊
 
-<p>​                                                           图2. Monoun和Nyos电导率曲线</p>
-<p>&#x3D;&#x3D;Monoun湖电导率&#x3D;&#x3D;</p>
-<ul>
-<li>Layer I 混合良好，水的电导率较低；</li>
-<li>在23m处，有一个明显的分化，分离Layer I和II 层，电导率增加缓慢，第二层延申至51m，形成了Layer II；</li>
-<li>第三层混合良好，延伸至85m；</li>
-<li>第四层导电性稳定增加。</li>
-</ul>
-<p>&#x3D;&#x3D;Nyos湖电导率&#x3D;&#x3D;</p>
-<ul>
-<li>第一段与Monoun湖类似；</li>
-<li>在50m处有一尖锐变化，产生分层，Layer II 向下延伸至180m；</li>
-<li>Layer III 混合度良好，延伸至203m，<strong>在这个深度以下导电性急剧增加</strong>。</li>
-</ul>
-<h4 id="2-1-2-温度"><a href="#2-1-2-温度" class="headerlink" title="2.1.2 温度"></a>2.1.2 温度</h4><p><code>图3</code>显示了1986-2003年Monoun湖和1986-2001年Nyos湖的温度变化曲线 </p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220729083949141.png" alt="image-20220729083949141" style="zoom:80%;" />
+1$ info</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/" title="我的第一篇博客文章”">我的第一篇博客文章”</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-08-30T09:12:55.000Z" title="Created 2023-08-30 17:12:55">2023-08-30</time></span></div><div class="content">123测试 1111
+速冻 Ultra
+ 
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/30/my-first-paper/" title="my first paper">my first paper</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-08-30T07:53:59.000Z" title="Created 2023-08-30 15:53:59">2023-08-30</time></span></div><div class="content">The first coding
+测试
+省Take action and Motivation
+ all over from the world
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/30/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-08-30T07:43:21.510Z" title="Created 2023-08-30 15:43:21">2023-08-30</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-<p>​                                                             图3. Monoun和Nyos温度曲线</p>
-<p>&#x3D;&#x3D;Monoun湖温度&#x3D;&#x3D;</p>
-<ul>
-<li><p>各层温度最低值分布在5~21m之间；</p>
-</li>
-<li><p>Layer III 温度显著增加集中在1986-1999年间；</p>
-<blockquote>
-<p><strong>温度的升高表明有热量输入湖泊，CO<del>2</del>聚集量增加。</strong></p>
-</blockquote>
-</li>
-</ul>
-<p>&#x3D;&#x3D;Nyos湖温度&#x3D;&#x3D;</p>
-<ul>
-<li><p>Layer II 逐年温度变化幅度不大；</p>
-</li>
-<li><p>Nyos 湖Layer IV 层温度是逐年增加的。</p>
-</li>
-</ul>
-<h4 id="2-1-3-CO2-aq-浓度变化"><a href="#2-1-3-CO2-aq-浓度变化" class="headerlink" title="2.1.3 CO2(aq)浓度变化"></a>2.1.3 CO<del>2</del>(aq)浓度变化</h4><p><code>图4</code>显示事故发生后未脱气1986年11月至2001年1月期间尼奥斯湖CO<del>2</del>(aq)剖面的时间变化。</p>
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220729084015378.png" alt="image-20220729084015378" style="zoom:80%;" />
+More info: Writing
+Run server1$ hexo server
 
-<p>​                                                               图4. Nyos中CO<del>2</del>脱气前</p>
-<ul>
-<li>在刚发生爆炸后CO<del>2</del>浓度最低；</li>
-<li>在50-150m中（Layer II）CO<del>2</del>浓度没有明显变化；</li>
-<li>在170m后，CO<del>2</del>的浓度开始显著上升；</li>
-<li>脱气后，底部CO2浓度保持稳定，没有较大变化。</li>
-</ul>
-<h3 id="2-2-脱气后CO2浓度预测"><a href="#2-2-脱气后CO2浓度预测" class="headerlink" title="2.2 脱气后CO2浓度预测"></a>2.2 脱气后CO<del>2</del>浓度预测</h3><p><code>图5</code>显示事故发生后脱气后2001-2014期间尼奥斯湖CO<del>2</del>(aq)剖面的时间变化。</p>
-<img src="C:\Users\ADMINI~1\AppData\Local\Temp\WeChat Files\66a1e5c6418f0068f2548178263a750.png" alt="66a1e5c6418f0068f2548178263a750" style="zoom:80%;" />
+More info: Server
+Generate static files1$ hexo generate
 
-<p>​                                                              图5. Nyos中CO<del>2</del>脱气后</p>
-<ul>
-<li>相比脱气之前，CO<del>2</del>浓度剖面的位置进一步下降，CO<del>2</del>的脱气速率加快；</li>
-<li>Nyos底层水富含的CO<del>2</del>将进一步下降直至脱完消失。</li>
-<li>要进行持续脱气，CO<del>2</del>气体仍然没有丧失自举能力。</li>
-</ul>
-<h2 id="3-湖泊喷发解释（Limnic-eruption-hypothesis）"><a href="#3-湖泊喷发解释（Limnic-eruption-hypothesis）" class="headerlink" title="3. 湖泊喷发解释（Limnic eruption hypothesis）"></a>3. 湖泊喷发解释（Limnic eruption hypothesis）</h2><h3 id="3-1-模型"><a href="#3-1-模型" class="headerlink" title="3.1 模型"></a>3.1 模型</h3><blockquote>
-<p><strong>任何脱气模型都要基于对湖泊中CO<del>2</del>喷发前分布的了解。</strong></p>
-</blockquote>
-<ul>
-<li><p>湖沼喷发成因</p>
-<ol>
-<li>Sigurdsson（1987）提出滑坡滑入深水，<strong>将富含二氧化碳的水推高</strong>，并诱发1984年莫瑙恩湖沼喷发。</li>
-<li>Tietze（1987）认为，最浅的化学层（1986年约8米深）下方的溶解&#x3D;&#x3D;CO<del>2</del>过饱和是喷发的主要原因。&#x3D;&#x3D;由于喷泉中的水比地表水要冷，所以它会在喷泉周围下沉，&#x3D;&#x3D;形成一个圆柱形的“密度墙”。这堵墙限制了湖泊范围内的气体外泄，使二氧化碳溶解在深水中喷发期间完好无损。&#x3D;&#x3D;</li>
-<li>Kanari（1989）提出了一个流体动力学模型来解释湖沼喷发是如何进行的，假设尼奥斯湖是等温的并且完全饱和CO<del>2</del>，&#x3D;&#x3D;在他的模型中，脱气从底部开始，但仅限于表面的有限区域&#x3D;&#x3D;。水的循环被限制在堆叠在不同深度的微小区域中。&#x3D;&#x3D;根据该模型，湖泊内的分层几乎不受影响。&#x3D;&#x3D;</li>
-</ol>
-</li>
-<li><p>溶解气体的自发出溶</p>
-<ol>
-<li>Kusakabe等人提出了溶解气体的自发出溶。**<code>图4</code>&#x3D;&#x3D;表明CO<del>2</del>（aq）剖面随时间演化&#x3D;&#x3D;**，并且由于下方CO<del>2</del>持续补给，&#x3D;&#x3D;较低化学层（第三层和第四层）下方的富CO<del>2</del>层变宽，CO<del>2</del>浓度增加&#x3D;&#x3D;。在第二层和第三层之间的边界处，正下方的CO<del>2</del>（aq）浓度非常接近饱和。如果不进行脱气操作，在几年内就会达到CO<del>2</del>（aq）在该深度下的饱和浓度，气泡形成后将额外输入补给液，产生新的喷发。</li>
-</ol>
-</li>
-</ul>
-<blockquote>
-<p><strong>饱和是湖泊喷发的必要不充分条件，上升的气泡可能会遇见上部未完全饱合水中，从而重新溶解。</strong></p>
-</blockquote>
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h2><ol>
-<li><p>根据同位素碳14分析，&#x3D;&#x3D;CO<del>2</del>的来源几乎都来自于地壳深处的岩浆&#x3D;&#x3D;，在岩浆升向地表的过程中，随着压强减小，会释放出CO<del>2</del>和挥发性气体，CO<del>2</del>从地底进入Nyos湖中，由&#x3D;&#x3D;于上层湖水温度高密度低，下层温度低，刚好可以溶解更多的CO<del>2</del>&#x3D;&#x3D;，让湖底溶解着大量CO<del>2</del>气体，一旦分层的湖水受到大幅扰动引发，下层湖水就会像被使劲摇晃的汽水翻腾上去，发生泡腾现象，进而喷发出大量气体。</p>
-<blockquote>
-<p><strong>CO<del>2</del>从湖泊中涌出这是大自然中的一种天然脱气现象，称为湖泊翻转。</strong></p>
-</blockquote>
-</li>
-<li><p>在湖底&#x3D;&#x3D;CO<del>2</del>主要存在于沉积物的孔隙中，并且CO<del>2</del>会在多孔介质中运移&#x3D;&#x3D;。不考虑温度的变化，假设有一CO<del>2</del>小气泡在湖底部，随着外部原因的某一次干扰，CO<del>2</del>移并带动周围的一小部分水，CO<del>2</del>在水中处于饱和状态，在位置上升期间，压力下降，CO<del>2</del>在水中的溶解度降低，当超过CO<del>2</del>在这一部分水中的溶解度时，即 CO<del>2</del>在这部分水中是过饱和状态，就会脱气产生新的CO<del>2</del>气泡，CO<del>2</del>（ap）的浓度下降，新的CO<del>2</del>气泡就会带动周围的一小部分水再次上升，逐此，大量的CO<del>2</del>气泡就会自举上升，从而引发CO<del>2</del>大量喷发，如<code>图6</code>所示。</p>
-</li>
-</ol>
-<p>![新建 Microsoft PowerPoint 演示文稿2](C:\Users\Administrator\Desktop\第一周周报_吴赵昊\新建 Microsoft PowerPoint 演示文稿2.png)</p>
-<p>​                                                                图6. CO<del>2</del>气泡自举上升</p>
-<blockquote>
-<p><strong>多孔介质是由多相物质所占据的共同空间，也是多相物质共存的一种</strong>。没有固体骨架的那部分空间叫做孔隙，由液体或气体或气液两相共同占有，相对于其中一相来说，其他相都弥散在其中，并以固相为固体骨架，构成孔隙空间的某些空洞相互连通。</p>
-</blockquote>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/30/06.%E7%AC%AC1%E5%91%A8%E6%B1%87%E6%8A%A5/" data-id="cllxkxgyj0000rsuh9uj5ek5b" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-恋爱哪些事" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/" class="article-date">
-  <time class="dt-published" datetime="2023-08-30T09:17:40.000Z" itemprop="datePublished">2023-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/">恋爱哪些事</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h3><ul>
-<li>喊我刮胡子 😊</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ info</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/" data-id="cllxkxgz60003rsuh69xfh0gl" data-title="恋爱哪些事" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-我的第一篇博客文章”" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/" class="article-date">
-  <time class="dt-published" datetime="2023-08-30T09:12:55.000Z" itemprop="datePublished">2023-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/">我的第一篇博客文章”</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="123测试"><a href="#123测试" class="headerlink" title="123测试"></a>123测试</h3><p> 1111</p>
-<h3 id="速冻"><a href="#速冻" class="headerlink" title="速冻"></a>速冻</h3><p> Ultra
- </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/" data-id="cllxkxgz70004rsuh5h1e464y" data-title="我的第一篇博客文章”" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-my-first-paper" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/30/my-first-paper/" class="article-date">
-  <time class="dt-published" datetime="2023-08-30T07:53:59.000Z" itemprop="datePublished">2023-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/08/30/my-first-paper/">my first paper</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="The-first-coding"><a href="#The-first-coding" class="headerlink" title="The first coding"></a>The first coding</h1><hr>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.337.search-card.all.click&vd_source=53b19dffa6302edbc778f875729efa3c">测试</a></p>
-<h2 id="Take-action-and-Motivation"><a href="#Take-action-and-Motivation" class="headerlink" title="Take action and Motivation"></a>Take action and Motivation</h2><hr>
-<p> all over from the world</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/30/my-first-paper/" data-id="cllxkxgz50002rsuh1n2wbst5" data-title="my first paper" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/08/30/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-08-30T07:43:21.510Z" itemprop="datePublished">2023-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/08/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/08/30/hello-world/" data-id="cllxkxgyn0001rsuh5qr03zw6" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/08/30/06.%E7%AC%AC1%E5%91%A8%E6%B1%87%E6%8A%A5/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/">恋爱哪些事</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/">我的第一篇博客文章”</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/30/my-first-paper/">my first paper</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/30/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/30/06.%E7%AC%AC1%E5%91%A8%E6%B1%87%E6%8A%A5/" title="No title">No title</a><time datetime="2023-08-30T09:42:12.502Z" title="Created 2023-08-30 17:42:12">2023-08-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/" title="恋爱哪些事">恋爱哪些事</a><time datetime="2023-08-30T09:17:40.000Z" title="Created 2023-08-30 17:17:40">2023-08-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/" title="我的第一篇博客文章”">我的第一篇博客文章”</a><time datetime="2023-08-30T09:12:55.000Z" title="Created 2023-08-30 17:12:55">2023-08-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/30/my-first-paper/" title="my first paper">my first paper</a><time datetime="2023-08-30T07:53:59.000Z" title="Created 2023-08-30 15:53:59">2023-08-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/30/hello-world/" title="Hello World">Hello World</a><time datetime="2023-08-30T07:43:21.510Z" title="Created 2023-08-30 15:43:21">2023-08-30</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">August 2023</span><span class="card-archive-list-count">5</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-08-31T07:25:12.033Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

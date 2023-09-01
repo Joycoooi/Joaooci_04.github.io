@@ -4,12 +4,48 @@
   
     
     <entry>
+      <title>测试时间</title>
+      <link href="/2023/09/01/%E6%B5%8B%E8%AF%95%E6%97%B6%E9%97%B4/"/>
+      <url>/2023/09/01/%E6%B5%8B%E8%AF%95%E6%97%B6%E9%97%B4/</url>
+      
+        <content type="html"><![CDATA[<p>你去</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/01/timeline/"/>
+      <url>/2023/09/01/timeline/</url>
+      
+        <content type="html"><![CDATA[<div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间轴样式</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class='timeline-item-content'><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class='timeline-item-content'><p>不需要额外处理。</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2020-04-20 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3">2.6.2 -&gt; 2.6.3</a></p></div></div><div class='timeline-item-content'><ol><li>全局搜索 <code>seotitle</code> 并替换为 <code>seo_title</code>。</li><li>group 组件的索引规则有变，使用 group 组件的文章内，<code>group: group_name</code> 对应的组件名必须是 <code>group_name</code>。</li><li>group 组件的列表名优先显示文章的 <code>short_title</code> 其次是 <code>title</code>。</li></ol></div></div></div><!-- 作者: Ethan.Tzy链接: https://fe32.top/articles/0xiipgum/#%E6%97%B6%E9%97%B4%E8%BD%B4-timeline来源: 唐志远の博客著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 -->]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>testing</title>
       <link href="/2023/08/31/testing/"/>
       <url>/2023/08/31/testing/</url>
       
-        <content type="html"><![CDATA[<h1 id="今天是星期四"><a href="#今天是星期四" class="headerlink" title="今天是星期四"></a>今天是星期四</h1><pre><code>明天是星期五</code></pre><hr><h1 id="后天是星期六"><a href="#后天是星期六" class="headerlink" title="后天是星期六"></a>后天是星期六</h1><pre><code>大后天是星期六</code></pre><hr>]]></content>
+        <content type="html"><![CDATA[<h1 id="今天是星期四"><a href="#今天是星期四" class="headerlink" title="今天是星期四"></a>今天是星期四</h1><p>明天是星期五</p><hr><h1 id="后天是星期六"><a href="#后天是星期六" class="headerlink" title="后天是星期六"></a>后天是星期六</h1><p>大后天是星期六</p><hr>]]></content>
       
+      
+      <categories>
+          
+          <category> Diary </category>
+          
+          <category> PlayStation </category>
+          
+          <category> Ultra </category>
+          
+      </categories>
       
       
     </entry>

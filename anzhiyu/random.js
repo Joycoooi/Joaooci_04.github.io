@@ -1,0 +1,1 @@
+var posts=["2023/08/30/06-第1周汇报/","2023/09/01/测试时间/","2023/08/30/my-first-paper/","2023/08/30/hello-world/","2023/09/01/timeline/","2023/08/31/testing/","2023/08/30/恋爱哪些事/","2023/08/30/我的第一篇博客文章”/","2023/08/30/记一次晚霞/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};

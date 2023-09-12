@@ -34,7 +34,7 @@
       <link href="/2023/08/31/testing/"/>
       <url>/2023/08/31/testing/</url>
       
-        <content type="html"><![CDATA[<h1 id="今天是星期四"><a href="#今天是星期四" class="headerlink" title="今天是星期四"></a>今天是星期四</h1><p>明天是星期五</p><hr><h1 id="后天是星期六"><a href="#后天是星期六" class="headerlink" title="后天是星期六"></a>后天是星期六</h1><p>大后天是星期六</p><hr>]]></content>
+        <content type="html"><![CDATA[<h1 id="今天是星期四"><a href="#今天是星期四" class="headerlink" title="今天是星期四"></a>今天是星期四</h1><p>明天是星期五</p><hr><h1 id="后天是星期六"><a href="#后天是星期六" class="headerlink" title="后天是星期六"></a>后天是星期六</h1><p>大后天是星期六</p><hr><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> </span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -97,13 +97,19 @@
     
     
     <entry>
-      <title>我的第一篇博客文章”</title>
+      <title>我的第一篇博客文章</title>
       <link href="/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/"/>
       <url>/2023/08/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E2%80%9D/</url>
       
-        <content type="html"><![CDATA[<h3 id="123测试"><a href="#123测试" class="headerlink" title="123测试"></a>123测试</h3><p> 1111</p><h3 id="速冻"><a href="#速冻" class="headerlink" title="速冻"></a>速冻</h3><p>冻结温度</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="123测试"><a href="#123测试" class="headerlink" title="123测试"></a>123测试</h3><p> 1111</p><h3 id="速冻"><a href="#速冻" class="headerlink" title="速冻"></a>速冻</h3><p>图床配置！</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> ultra </tag>
+            
+        </tags>
       
     </entry>
     
@@ -127,7 +133,7 @@
       <link href="/2023/08/30/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%99%9A%E9%9C%9E/"/>
       <url>/2023/08/30/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%99%9A%E9%9C%9E/</url>
       
-        <content type="html"><![CDATA[<p>喜欢你</p><p>#美好的晚霞<br> 今天是周四</p><blockquote><p>如果你还没有睡 </p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>喜欢你</p><p>#美好的晚霞<br> 今天是周四<br> 如果你还没有睡</p>]]></content>
       
       
       

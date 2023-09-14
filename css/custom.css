@@ -4,8 +4,8 @@
     width: 16px;
     height: 16px;
     /* 这里改变跟随的底色 */
-    background: red;
-    /* background: var(--anzhiyu-main); */
+    background: var(--anzhiyu-main);
+   
     /* background: var(--theme-color); */
     border-radius: 8px;
     opacity: 0.25;

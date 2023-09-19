@@ -53,7 +53,7 @@
       <link href="/2023/08/31/testing/"/>
       <url>/2023/08/31/testing/</url>
       
-        <content type="html"><![CDATA[<h1 id="今天是星期四"><a href="#今天是星期四" class="headerlink" title="今天是星期四"></a>今天是星期四</h1><p>明天是星期五</p><hr><h1 id="后天是星期六"><a href="#后天是星期六" class="headerlink" title="后天是星期六"></a>后天是星期六</h1><p>大后天是星期六</p><hr><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> </span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="今天是星期四"><a href="#今天是星期四" class="headerlink" title="今天是星期四"></a>今天是星期四</h1><p>明天是星期五</p><hr><h1 id="后天是星期六"><a href="#后天是星期六" class="headerlink" title="后天是星期六"></a>后天是星期六</h1><p>大后天是星期六</p><hr><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> </span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ info</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -95,7 +95,7 @@
       <link href="/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/"/>
       <url>/2023/08/30/%E6%81%8B%E7%88%B1%E5%93%AA%E4%BA%9B%E4%BA%8B/</url>
       
-        <content type="html"><![CDATA[<h3 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h3><ul><li>喊我刮胡子 😊</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ info</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ info</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>

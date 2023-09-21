@@ -8,7 +8,7 @@
    
     /* background: var(--theme-color); */
     border-radius: 8px;
-    opacity: 0.25;
+    opacity: 0.8;
     z-index: 10086;
     pointer-events: none;
     transition: 0.2s ease-in-out;

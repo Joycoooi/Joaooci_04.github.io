@@ -11502,7 +11502,7 @@ h1.page-title + .tag-cloud-list {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: -11px;
+  bottom: -12px;
   z-index: 5;
   pointer-events: none;
 }

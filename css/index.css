@@ -21406,6 +21406,7 @@ details .content > *:nth-child(1) {
   font-weight: 700;
   padding-bottom: 6px;
 }
+
 .comment-barrage-item .barrageHead .barrageTitle {
   color: var(--anzhiyu-card-bg);
   margin-right: 8px;
@@ -21428,12 +21429,17 @@ details .content > *:nth-child(1) {
 }
 .comment-barrage-item .barrageContent {
   font-size: 14px !important;  
-  /* 正文字体样式 */
+  /* 热评正文字体样式 */
   font-weight: 400 !important;
   height: calc(100% - 30px);
   overflow: scroll;
   cursor: pointer;
 }
+.comment-barrage-item .barrageContent:hover {
+  color: var(--anzhiyu-main);
+  font-weight: bold!important;
+}
+  /* 热评正文字体加粗和hover */
 .comment-barrage-item .barrageContent::-webkit-scrollbar {
   height: 0;
   width: 4px;

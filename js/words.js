@@ -4,7 +4,7 @@ function danmu() {
     const Danmaku = new EasyDanmaku({
       page: '/ultra/', // 即留言板地址
       el: '#danmu', //弹幕挂载节点
-      line: 1, //弹幕行数
+      line: 5, //弹幕行数
       speed: 20, //弹幕播放速度
       hover: true,
       loop: true, //开启循环播放
